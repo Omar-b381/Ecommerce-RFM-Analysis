@@ -123,7 +123,7 @@ If you find a bug or have an improvement idea, feel free to open an **Issue** or
 
 ## 📬 Connect with Me
 - **LinkedIn:** [Omar Ahmed](https://www.linkedin.com/in/omarbadrdata/)  
-- **GitHub:** [YourGitHubUsername](https://github.com/USERNAME)  
+- **Gmail:** [omar.work381@gmial.com](omar.work381@gmail.com)  
 
 ---
 
