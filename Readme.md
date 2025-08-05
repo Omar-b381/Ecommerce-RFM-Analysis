@@ -1,130 +1,70 @@
-# 🛒 E-Commerce RFM & Sales Analysis
+# تحليل وتقسيم عملاء التجارة الإلكترونية باستخدام نموذج RFM
 
-## 📌 Project Description
-This project analyzes e-commerce transactions to extract **business insights** including:
-- **RFM Analysis** to segment customers into VIP, Potential Loyalists, At Risk, and Lost.
-- **Sales & Returns Analysis** to calculate net revenue and top-performing products.
-- **Monthly KPIs** such as Revenue, Quantity, Number of Transactions, and AOV.
-- **Customer Behavior Analysis** to support **marketing and retention strategies**.
+## 🎯 نظرة عامة على المشروع
 
-> The project demonstrates a complete **data analytics workflow** using Python & Pandas,  
-> transforming raw e-commerce data into actionable business intelligence.
+يهدف هذا المشروع إلى تحليل سلوك العملاء في متجر تجارة إلكترونية وتقسيمهم إلى شرائح استراتيجية بناءً على معاملاتهم الشرائية. تم استخدام نموذج **RFM (Recency, Frequency, Monetary)** لتحديد العملاء الأكثر قيمة، والعملاء المعرضين لخطر المغادرة، وغيرهم، مما يمكّن الشركة من إطلاق حملات تسويقية موجهة وفعالة.
 
 ---
 
-## 📂 Project Structure
-```
-Ecommerce-RFM-Analysis/
-│
-├── data/                # Dataset (if small) or link in README
-├── notebooks/           # Jupyter Notebooks for analysis
-├── scripts/             # Python scripts for data processing
-├── outputs/             # Charts & figures
-│
-├── requirements.txt     # Python dependencies
-├── README.md            # Project documentation
-└── .gitignore           # Ignore unnecessary files
-```
+## 💡 الفائدة العملية (Use Cases)
+
+يمكن للشركات الاستفادة من هذا التحليل في:
+- **تحديد أفضل العملاء (Champions):** ومكافأتهم ببرامج ولاء حصرية.
+- **استهداف العملاء الواعدين (Potential Loyalists):** وتحويلهم إلى عملاء دائمين.
+- **إعادة تنشيط العملاء الخاملين (At-Risk Customers):** عبر حملات تسويقية مخصصة.
+- **تحسين تجربة العملاء:** من خلال فهم سلوكياتهم الشرائية وتقديم عروض تناسبهم.
 
 ---
 
-## 🚀 How to Run the Project
+## 📊 أهم النتائج
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/USERNAME/Ecommerce-RFM-Analysis.git
-cd Ecommerce-RFM-Analysis
-```
+تم تقسيم العملاء إلى 11 شريحة مختلفة بناءً على سلوكهم الشرائي. الرسم البياني التالي يوضح توزيع العملاء عبر هذه الشرائح، مما يعطي نظرة سريعة على هيكل قاعدة العملاء.
 
-2. **Create virtual environment (recommended)**
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-```
+![توزيع شرائح العملاء](https://i.imgur.com/your-image-link.png ) 
+*(ملاحظة: قم باستبدال الرابط برابط صورة حقيقية من تحليلك)*
 
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Run analysis**
-- Open the notebook:
-```bash
-jupyter notebook notebooks/analysis.ipynb
-```
+**أبرز الشرائح:**
+- **Champions (الأبطال):** يمثلون النسبة الأعلى من العملاء الأكثر قيمة.
+- **Loyal Customers (العملاء الأوفياء):** قاعدة أساسية يمكن الاعتماد عليها.
+- **At-Risk (في خطر):** شريحة كبيرة تحتاج إلى تدخل فوري لمنع فقدانها.
 
 ---
 
-## 📊 Key Features
+## 🚀 كيفية تشغيل المشروع
 
-### 1️⃣ RFM Analysis
-- Segments customers into:
-  - **VIP Customers** → Recent, Frequent, High spenders  
-  - **Potential Loyalists** → Frequent but not recent  
-  - **At Risk** → High past value, no recent activity  
-  - **Lost Customers** → Old and infrequent  
-- Generates RFM table with scoring and segmentation.
+1.  **استنساخ المستودع:**
+    ```bash
+    git clone https://github.com/Omar-b381/Ecommerce-RFM-Analysis.git
+    cd Ecommerce-RFM-Analysis
+    ```
 
-### 2️⃣ Sales & Returns Analysis
-- Net revenue calculation including returns.  
-- Top-selling and most-returned products.  
-- Monthly KPI dashboard with:
-  - Revenue
-  - Transactions
-  - Quantity
-  - Average Order Value (AOV)
+2.  **تثبيت المتطلبات:**
+    تأكد من وجود Python 3.x مثبتًا على جهازك، ثم قم بتثبيت المكتبات اللازمة.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### 3️⃣ Visualizations
-- **Monthly Revenue (Purchases vs Returns)** – Stacked Bar Chart  
-- **Customer Segments Distribution** – Pie & Bar Charts  
-- **RFM Heatmap** – Recency vs Frequency vs Monetary  
-
-> 💡 Screenshots or charts can be added to `outputs/` folder.
+3.  **تشغيل دفتر التحليل:**
+    افتح دفتر Jupyter Notebook الموجود في مجلد `notebooks/` لتصفح خطوات التحليل بالتفصيل.
+    ```bash
+    jupyter notebook notebooks/rfm_analysis.ipynb
+    ```
 
 ---
 
-## 📁 Dataset
-- Original data: E-commerce transactions (InvoiceNo, CustomerID, Quantity, UnitPrice, InvoiceDate)
-- If the dataset is large:
-  - Provide a **Google Drive / Kaggle link** here.
+## 🛠️ المتطلبات (Requirements )
+
+المكتبات الأساسية المستخدمة في هذا المشروع:
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+
+يمكنك تثبيتها جميعًا باستخدام الملف `requirements.txt`.
 
 ---
 
-## 🛠 Tech Stack
-- Python 3.11+
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Humanize (for friendly numbers)
-- mlxtend (for association rules)
-- Jupyter Notebook
+## 📜 الترخيص (License)
 
----
-
-## 📈 Sample Results
-
-**RFM Heatmap Example:**
-```
-Frequency ↑
-    +-----------------------------+
-    |                             |
-    |           VIP                |
-    |                             |
-    +-----------------------------+ → Recency
-```
-
----
-
-## 🤝 Contributing
-Contributions and suggestions are welcome!  
-If you find a bug or have an improvement idea, feel free to open an **Issue** or **Pull Request**.
-
----
-
-## 📬 Connect with Me
-- **LinkedIn:** [Omar Ahmed](https://www.linkedin.com/in/omarbadrdata/)  
-- **Gmail:** [omar.work381@gmial.com](omar.work381@gmail.com)  
-
----
-
-**⭐ If you found this project useful, please give it a star on GitHub!**
+هذا المشروع مرخص تحت ترخيص [MIT License](LICENSE).
