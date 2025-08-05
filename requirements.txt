@@ -1,0 +1,5 @@
+
+humanize==4.12.3
+pandas
+matplotlip
+seaborn
